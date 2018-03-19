@@ -1,0 +1,66 @@
+﻿@model MyWordrobeBL.Models.Bottom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bottom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomSize.Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomSize.Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color.ColorChoice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorChoice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occasion.Occasion1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occasion.Occasion1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo.Photo1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo.Photo1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season.Season1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.Season1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomsID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

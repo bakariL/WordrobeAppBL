@@ -1,0 +1,116 @@
+﻿
+
+body {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #e1e1e1, #e7e7e7, #ededed, #f3f3f3, #f9f9f9);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size:60px
+}
+.topHead{
+
+    text-align: center;
+    margin-top: 10em;
+    
+}
+
+
+footer {
+    margin-top: 19em;
+    font-family: 'Lato', sans-serif;
+}
+
+/* GENERAL BUTTON STYLING */
+
+.beginBtn {
+
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+#create {
+    color: #00B2FF;
+}
+
+
+#button,
+#button::after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#button {
+    text-align: center;
+    background-color: #1eb401;
+    text-align: center;
+    background: none;
+    border: 3px solid #1eb401;
+    border-radius: 5px;
+    color: #1eb401;
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    margin: 1em auto;
+    padding: 1em;
+    width: 12em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    text-transform: uppercase;
+}
+
+    #button::before,
+    #button::after {
+        background: #1eb401;
+        content: '';
+        position: absolute;
+        z-index: -1;
+    }
+
+    #button:hover {
+        color: ghostwhite;
+    }
+
+
+/* BUTTON 2 */
+.btn-2::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.btn-2:hover:after {
+    width: 100%;
+}
+
+.lead {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        transition: all 0.3s;
+        transform: translateZ(10px);
+    }
+
+h1 {
+    margin: 0;
+}

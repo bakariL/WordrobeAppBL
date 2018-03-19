@@ -1,0 +1,51 @@
+﻿<link href="~/Content/indexStyle.css" rel="stylesheet" />
+
+@model IEnumerable<MyWordrobeBL.Models.Photo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Add Photo</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+   
+    <div class="row">
+        @foreach (var item in Model)
+    {
+        <div class="img-thumbnail thumb">
+            <div class="col-lg-3">
+                <p>
+                    @Html.DisplayNameFor(model => model.Photo1)
+                </p>
+                <img src=" @Html.DisplayFor(modelItem => item.Photo1)" width="100" height="100" />
+
+                <div class="lowerOptions">
+                    <hr />
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PhotoID }) 
+                    @Html.ActionLink("Details", "Details", new { id = item.PhotoID }) 
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PhotoID })
+                </div>
+            </div>
+            </div>
+            }
+        </div>
+    
+<footer>
+    <div class="nav navbar">
+        <ul>
+            <li><a href="~/Home/Index">home</a></li>
+            <li><a href="~/Tops/Index">tops</a></li>
+            <li><a href="~/Bottoms/Index">bottoms</a></li>
+            <li><a href="~/Shoes/Index">shoes</a></li>
+            <li><a href="~/Accesories/Index">accessories</a></li>
+            <li><a href="~/Outfits/Index">outfits</a></li>
+        </ul>
+
+        <p id="foot">&copy; @DateTime.Now.Year - My Wordrobe Application</p>
+    </div>
+
+</footer>

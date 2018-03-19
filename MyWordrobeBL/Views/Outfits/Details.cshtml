@@ -1,0 +1,46 @@
+﻿
+@model MyWordrobeBL.Models.Outfit
+<link href="~/Content/DetailsPgStyle.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>outfit Details</h2>
+
+<div class="row">
+    <h4>Outfit</h4>
+    <hr />
+    <div class="thumbnail thumb ">
+
+        @Html.DisplayNameFor(model => model.Accesory.Name) :             @Html.DisplayFor(model => model.Accesory.Name)
+
+        @Html.DisplayNameFor(model => model.Bottom.Name): @Html.DisplayFor(model => model.Bottom.Name)
+
+        @Html.DisplayNameFor(model => model.Sho.Name) : @Html.DisplayFor(model => model.Sho.Name)
+
+        @Html.DisplayNameFor(model => model.Top.Name) :  @Html.DisplayFor(model => model.Top.Name)
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</div>
+        </div>
+
+
+<footer>
+    <div class="nav navbar">
+        <ul>
+            <li><a href="~/Home/Index">home</a></li>
+            <li><a href="~/Tops/Index">tops</a></li>
+            <li><a href="~/Bottoms/Index">bottoms</a></li>
+            <li><a href="~/Shoes/Index">shoes</a></li>
+            <li><a href="~/Accesories/Index">accessories</a></li>
+            <li><a href="~/Outfits/Index">outfits</a></li>
+        </ul>
+
+        <p id="foot">&copy; @DateTime.Now.Year - My Wordrobe Application</p>
+    </div>
+
+</footer>

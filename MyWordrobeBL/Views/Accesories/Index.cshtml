@@ -1,0 +1,38 @@
+﻿@model IEnumerable<MyWordrobeBL.Models.Accesory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<<div class="row">
+    <div class="col-lg-4">
+        <a href="~/Home/Index"> <img src="~/Content/iconeOtherpics/icons8-back-arrow-64.png" /> <P>go back</P></a>
+
+    </div>
+    <div class="col-lg-4">
+        <h2>accessories</h2>
+    </div>
+    <div class="col-lg-4 last">
+        <a href="~/Accesories/Create">
+            <img src="~/Content/iconeOtherpics/icons8-add-64.png" />    <p>add new accessory</p>
+        </a>
+
+    </div>
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col-lg-3">
+        <div class="thumbnail">
+            <img src="  @Html.DisplayFor(modelItem => item.Photo.Photo1)" width="200" height="200" />
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AccesoriesID })
+                @Html.ActionLink("Details", "Details", new { id = item.AccesoriesID })
+                @Html.ActionLink("Delete", "Delete", new { id = item.AccesoriesID })
+            </p>
+        </div>
+
+    </div>
+    }
+</div>
+   

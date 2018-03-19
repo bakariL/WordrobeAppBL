@@ -1,0 +1,77 @@
+﻿<link href="~/Content/OutfitStyle.css" rel="stylesheet" />
+
+@model IEnumerable<MyWordrobeBL.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-lg-4">
+        <a href="~/Home/Index"> <img src="~/Content/iconeOtherpics/icons8-back-arrow-64.png" /> <P>go back</P></a>
+       
+    </div>
+    <div class="col-lg-4">
+        <h2>outfits</h2>
+    </div>
+    <div class="col-lg-4 last">
+        <a href="~/Outfits/Create">
+            <img src="~/Content/iconeOtherpics/icons8-add-64.png" />    <p>add new outfit</p>
+        </a>
+        
+    </div>
+</div>
+
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-4">
+
+            <div class="thumbnail thumb">
+                <div class="outfitHeader">
+                    <h4>my outfit</h4>
+                    <hr />
+                </div>
+                <p>
+                    <img src=" @Html.DisplayFor(modelItem => item.Top.Photo.Photo1)" width="100" height="100" />
+                </p>
+                <p>
+                    <img src="@Html.DisplayFor(modelItem => item.Bottom.Photo.Photo1)" width="100" height="100" />
+                </p>
+                <p>
+                    <img src=" @Html.DisplayFor(modelItem => item.Sho.Photo.Photo1)" width="100" height="100" />
+                </p>
+                <p>
+                    <img src="@Html.DisplayFor(modelItem => item.Accesory.Photo.Photo1)" width="100" height="100" />
+                </p>
+                <div class="options">
+                    <hr />
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<footer>
+    <div class="nav navbar">
+        <ul>
+            <li><a href="~/Home/Index">home</a></li>
+            <li><a href="~/Tops/Index">tops</a></li>
+            <li><a href="~/Bottoms/Index">bottoms</a></li>
+            <li><a href="~/Shoes/Index">shoes</a></li>
+            <li><a href="~/Accesories/Index">accessories</a></li>
+            <li><a href="~/Outfits/Index">outfits</a></li>
+        </ul>
+
+        <p id="foot">&copy; @DateTime.Now.Year - My Wordrobe Application</p>
+    </div>
+
+</footer>
+
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6ac48159a2554a64bc98add58f0ef09e" Name="Diagram1">
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Accesory" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Bottom" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.BottomSize" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Color" Width="1.5" PointX="3.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Occasion" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Outfit" Width="1.5" PointX="8.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Photo" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Season" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Sho" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.ShoeSize" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.Top" Width="1.5" PointX="3" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WordrobeBLewisModel.TopSize" Width="1.5" PointX="0.75" PointY="14.375" IsExpanded="true" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Accesories_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Accesories_Photo" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Outfit_Accesories" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Bottoms_BottomSize" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Bottoms_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Bottoms_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Bottoms_Photo" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Bottoms_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Outfit_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Tops_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Shoes_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Tops_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Outfit_Shoes" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Outfit_Tops" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Shoes_Photo" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Tops_Photo" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Shoes_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Tops_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Shoes_ShoeSize" ManuallyRouted="false" />
+        <AssociationConnector Association="WordrobeBLewisModel.FK_Tops_TopSize" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

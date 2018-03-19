@@ -1,0 +1,54 @@
+﻿.thumb {
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    background-image: linear-gradient(to right top, #c8c8c8, #d6d6d6, #e3e3e3, #f1f1f1, #ffffff);
+    box-shadow: 0.2px 0.3px 0.2px 0px #c8c8c8;
+}
+
+h2{
+    text-align:center;
+}
+
+img{
+    align-items:center;
+    text-align:center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.options {
+    background-image: linear-gradient(to right top, #8d00e7, #b600da, #d500cd, #ec10c1, #ff30b7);
+    color:aliceblue;
+}
+    .options a {
+        color: aliceblue;
+        font-size: large;
+        padding-bottom: 1em;
+    }
+
+.last{
+    display:flex;
+    justify-content:flex-end;
+    padding-bottom:3em;
+    padding-right: 1em;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+h4{
+    padding:0;
+    margin:0;
+}
+
+.outfitHeader {
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to right top, #323232, #443b63, #5e3f94, #833ac1, #b31be9);
+}
+
+
+

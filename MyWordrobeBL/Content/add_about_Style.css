@@ -1,0 +1,31 @@
+﻿.row{
+    display:flex !important;
+    margin-left: 40em;
+    padding-top: 15em;
+
+}
+
+.thumb{
+
+    text-align:center;
+    margin-left: 1em;
+    box-shadow: 0.2px 0.5px 1px 0px #454545;
+    border-radius: 5%;
+}
+
+h2{
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.back{
+    padding-left: 1em;
+    margin-top: 10em;
+    padding-top: 2em;
+}
+
+#word {
+    color: #46DB00;
+    font-size:55px;
+    
+}

@@ -1,0 +1,41 @@
+﻿<link href="~/Content/TopsInstyle.css" rel="stylesheet" />
+
+@model IEnumerable<MyWordrobeBL.Models.Top>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-4">
+        <a href="~/Home/Index"> <img src="~/Content/iconeOtherpics/icons8-back-arrow-64.png" /> <P>go back</P></a>
+
+    </div>
+    <div class="col-lg-4">
+        <h2>tops</h2>
+    </div>
+    <div class="col-lg-4 last">
+        <a href="~/Tops/Create">
+            <img src="~/Content/iconeOtherpics/icons8-add-64.png" />    <p>add new top</p>
+        </a>
+
+    </div>
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col-lg-4">
+        <div class="thumbnail img-thumbnail">
+
+            <p>@Html.DisplayFor(modelItem => item.Name)</p>
+            <img src="@Html.DisplayFor(modelItem => item.Photo.Photo1)" width="200" height="200" />
+
+            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+        </div>
+    </div>
+    }
+
+</div>
+
